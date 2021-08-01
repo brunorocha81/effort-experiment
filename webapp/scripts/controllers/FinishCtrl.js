@@ -8,8 +8,8 @@ angular.module('tutor').controller("FinishCtrl", function($scope, User) {
             method: 'share',
             display: 'popup',
             href: 'https://weblab.nees.com.br/kelly/',
-            title: 'Estudo sobre motivação',
-            description: 'Participe deste estudo sobre motivação!',
+            title: 'Estudo sobre Introversão',
+            description: 'Participe deste estudo sobre Introversão!',
             layout: 'button'
         }, function (response) { });
       

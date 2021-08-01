@@ -23,23 +23,23 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
     var levelTenFlag = true;
 
     var users = [{
-        name: "Alan",
+        name: "Omar",
         points: 19,
         avatar: "assets/" + configService.getTheme() + "/images/ranking1.png"
     }, {
-        name: "Valentine",
+        name: "Larissa",
         points: 15,
         avatar: "assets/" + configService.getTheme() + "/images/ranking2.png"
     }, {
-        name: "Francis",
+        name: "Marcone",
         points: 13,
         avatar: "assets/" + configService.getTheme() + "/images/ranking3.png"
     }, {
-        name: "Danni",
+        name: "Astolfo",
         points: 7,
         avatar: "assets/" + configService.getTheme() + "/images/ranking4.png"
     }, {
-        name: "Gil",
+        name: "Plínio",
         points: totalPoints,
         avatar: userAvatar
     }];
@@ -257,23 +257,23 @@ angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDi
 
         //updates ranking
         users = [{
-            name: "Alan",
+            name: "Omar",
             points: 19,
             avatar: "assets/" + configService.getTheme() + "/images/ranking1.png"
         }, {
-            name: "Valentine",
+            name: "Larissa",
             points: 15,
             avatar: "assets/" + configService.getTheme() + "/images/ranking2.png"
         }, {
-            name: "Francis",
+            name: "Marcone",
             points: 13,
             avatar: "assets/" + configService.getTheme() + "/images/ranking3.png"
         }, {
-            name: "Danni",
+            name: "Astolfo",
             points: 7,
             avatar: "assets/" + configService.getTheme() + "/images/ranking4.png"
         }, {
-            name: "Gil",
+            name: "Plínio",
             points: totalPoints,
             avatar: userAvatar
         }];

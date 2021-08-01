@@ -5,15 +5,32 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
     var random = Math.floor((Math.random() * 10000)) % 3;
 
     $scope.questions = [
-    "Minhas habilidades combinam com o desafio que estou experimentando",
-    "Realizo a atividade automaticamente sem pensar muito",
-    "Sei o que quero alcançar", 
-    "É muito claro para mim como estou me saindo na atividade",
-    "Estou completamente focado na tarefa em questão", 
-    "Tenho um sentimento de total controle sobre o que estou fazendo",
-    "Não estou preocupado com o que os outros podem estar pensando de mim", 
-    "A forma como o tempo passa parece ser diferente da normal", 
-    "A experiência é extremamente recompensadora"];
+    "É conversador, comunicativo",
+    "Ás vezes é frio e  distante",
+    "Tende a ser crítico com os outros",
+    "È minucioso, detalhista no trabalho",
+    "É assertivo, não teme expressar o que sente",
+    "Insiste até concluir a tarefa ou o trabalho",
+    "È depressivo, triste",
+    "Gosta de cooperar com os outros",
+    "È original, tem sempre novas idéias",
+    "È temperamental, muda de humor facilmente",
+    "È inventivo, criativo",
+    "È reservado",
+    "Valoriza o artístico, o estético",
+    "È emocionalmente estável, não se altera facilmente",
+    "È prestativo e ajuda os outros",
+    "È, as vezes, tímido, inibido",
+    "Pode ser um tanto descuidado",
+    "È amavel, tem considerações pelos outros",
+    "Tente a ser preguiçoso",
+    "Faz as coisas com eficiencia",
+    "É relaxado, controla bem o estresse",
+    "È facilmente distraido",
+    "Mantém-se calmo nas situações tensas",
+    "Prefere trabalho rotineiro",
+    "É curioso sobre coisas diferentes",
+];
     $scope.answers = [];
 
     $scope.setTime = function() {
