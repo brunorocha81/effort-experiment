@@ -18,6 +18,7 @@ angular
     $scope.answers = [];
 
     $scope.processAnswers = function () {
+      
       var ans = $scope.answers;
       console.log(ans);
 

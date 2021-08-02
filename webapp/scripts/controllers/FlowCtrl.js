@@ -23,14 +23,14 @@ angular
       var time = new Date().getTime();
 
       $scope.processAnswers = function () {
-        //console.log($scope.answers);
+       //console.log($scope.answers);
         //  validation
-        if ($scope.answers.lenght < 8) {
-          $scope.msg = "Por favor, responda todas as perguntas!";
+        if ($scope.answers.length < 9) {
+          $scope.msg = "Por favor, responda todas as perguntas!"
         } else {
           function add(a, b) {
-            return parseInt(a) + parseInt(b);
-          }
+              return parseInt(a) + parseInt(b);
+          };
 
           var ans = $scope.answers;
           console.log(ans);

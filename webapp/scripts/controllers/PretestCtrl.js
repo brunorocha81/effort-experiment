@@ -8,25 +8,25 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
     "É conversador, comunicativo",
     "Ás vezes é frio e  distante",
     "Tende a ser crítico com os outros",
-    "È minucioso, detalhista no trabalho",
+    "É minucioso, detalhista no trabalho",
     "É assertivo, não teme expressar o que sente",
     "Insiste até concluir a tarefa ou o trabalho",
-    "È depressivo, triste",
+    "É depressivo, triste",
     "Gosta de cooperar com os outros",
-    "È original, tem sempre novas idéias",
-    "È temperamental, muda de humor facilmente",
-    "È inventivo, criativo",
-    "È reservado",
+    "É original, tem sempre novas idéias",
+    "É temperamental, muda de humor facilmente",
+    "É inventivo, criativo",
+    "É reservado",
     "Valoriza o artístico, o estético",
-    "È emocionalmente estável, não se altera facilmente",
-    "È prestativo e ajuda os outros",
-    "È, as vezes, tímido, inibido",
+    "É emocionalmente estável, não se altera facilmente",
+    "É prestativo e ajuda os outros",
+    "É, as vezes, tímido, inibido",
     "Pode ser um tanto descuidado",
-    "È amavel, tem considerações pelos outros",
+    "É amavel, tem considerações pelos outros",
     "Tente a ser preguiçoso",
     "Faz as coisas com eficiencia",
     "É relaxado, controla bem o estresse",
-    "È facilmente distraido",
+    "É facilmente distraido",
     "Mantém-se calmo nas situações tensas",
     "Prefere trabalho rotineiro",
     "É curioso sobre coisas diferentes",
@@ -42,7 +42,7 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
 
         //console.log($scope.answers);
         //  validation
-        if ($scope.answers.length < 9) {
+        if ($scope.answers.length < 25) {
             $scope.msg = "Por favor, responda todas as perguntas!"
         } else {
             function add(a, b) {
