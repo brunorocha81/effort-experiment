@@ -5,31 +5,12 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
     var random = Math.floor((Math.random() * 10000)) % 3;
 
     $scope.questions = [
-    "É conversador, comunicativo",
-    "Ás vezes é frio e  distante",
-    "Tende a ser crítico com os outros",
-    "É minucioso, detalhista no trabalho",
-    "É assertivo, não teme expressar o que sente",
-    "Insiste até concluir a tarefa ou o trabalho",
-    "É depressivo, triste",
-    "Gosta de cooperar com os outros",
-    "É original, tem sempre novas idéias",
-    "É temperamental, muda de humor facilmente",
-    "É inventivo, criativo",
-    "É reservado",
-    "Valoriza o artístico, o estético",
-    "É emocionalmente estável, não se altera facilmente",
-    "É prestativo e ajuda os outros",
-    "É, as vezes, tímido, inibido",
-    "Pode ser um tanto descuidado",
-    "É amavel, tem considerações pelos outros",
-    "Tente a ser preguiçoso",
-    "Faz as coisas com eficiencia",
-    "É relaxado, controla bem o estresse",
-    "É facilmente distraido",
-    "Mantém-se calmo nas situações tensas",
-    "Prefere trabalho rotineiro",
-    "É curioso sobre coisas diferentes",
+    "Já ultrapassei várias contrariedades para conseguir alcançar um objetivo importante.",
+    "Novas ideias e projectos afastam-me, por vezes, de projectos anteriores. ",
+    "Os meus interesses variam de ano para ano.",
+    "Os contratempos não me desencorajam.",
+    "Já estive obcecado com uma ideia ou projecto por um curto periodo de tempo, tendo-me desinteressado mais tarde.",
+    "Sou muito trabalhador.",
 ];
     $scope.answers = [];
 
@@ -42,7 +23,7 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
 
         //console.log($scope.answers);
         //  validation
-        if ($scope.answers.length < 25) {
+        if ($scope.answers.length < 6) {
             $scope.msg = "Por favor, responda todas as perguntas!"
         } else {
             function add(a, b) {

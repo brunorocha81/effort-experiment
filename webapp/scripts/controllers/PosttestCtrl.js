@@ -1,24 +1,11 @@
 angular.module('tutor').controller("PosttestCtrl", function($scope, $location, User) {
 
-    $scope.questions = ["É sociavel, extrovertido",
-                        "É geralmente confiável",
-                        "É, as vezes, rude (grosseiro) com os outros",
-                        "É cheio de energia",
-                        "Começa discussões, disputas com os outros",
-                        "É um trabalhador de confiança",
-                        "Faz planos e os segue a risca",
-                        "Tem uma Imaginação fértil",
-                        "Fica tenso com frequencia",
-                        "É engenhoso, álguem que gosta de analisar profundamente as coisas",
-                        "Fica nervoso facilmente",
-                        "Gera muito entusiasmo",
-                        "Tende a ser desorganizado",
-                        "Gosta de refletir, brincar com idéais",
-                        "Tem capacidade de perdoar, perdoa fácil",
-                        "Preocupa-se muito com tudo",
-                        "Tende a ser quieto, calado",
-                        "Tem poucos interesses artísticos",
-                        "É sofisticado em artes, músicas ou literatura"
+    $scope.questions = ["É frequente estabelecer um objectivo mas acabar por seguir um diferente.",
+                        "Tenho dificuldade em me manter focado em projectos que demorem mais do que alguns meses para completar.",
+                        "Eu acabo tudo o que começo.",
+                        "Já alcancei um objectivo que me levou anos de esforço para o alcançar.",
+                        "Interesso-me por novos desafios regularmente.",
+                        "Sou aplicado.",
 
 
     
@@ -27,7 +14,7 @@ angular.module('tutor').controller("PosttestCtrl", function($scope, $location, U
 
     $scope.processAnswers = function() {
 
-        if ($scope.answers.length < 19) {
+        if ($scope.answers.length < 6) {
             $scope.msg = "Por favor, responda todas as perguntas!"
         } else {
 
