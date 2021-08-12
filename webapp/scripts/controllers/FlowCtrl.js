@@ -8,15 +8,15 @@ angular
       var random = Math.floor(Math.random() * 10000) % 3;
 
       $scope.questions = [
-        "Estava muito claro para mim como eu estava me saindo na atividade",
-        "Não estava preocupado com o que os outros podiam estar pensando de mim",
-        "Minhas habilidades combinavam com o desafio da atividade que estava fazendo",
-        "As coisas pareciam estar acontecendo automaticamente",
-        "A forma como o tempo passou parecia ser diferente do normal",
-        "Eu sabia o que queria alcançar",
-        "Tive uma sensação de total controle sobre o que estava fazendo",
-        "A experiência me deixou com uma ótima sensação",
-        "Estava completamente focado na tarefa em questão",
+        "Minhas habilidades combinam com o desafio que estou experimentando",
+        "Realizo a atividade automaticamente sem pensar muito",
+        "Sei o que quero alcançar",
+        "É muito claro para mim como estou me saindo na atividade",
+        "Estou completamente focado na tarefa em questão",
+        "Tenho um sentimento de total controle sobre o que estou fazendo",
+        "Não estou preocupado com o que os outros podem estar pensando de mim",
+        "A forma como o tempo passa parece ser diferente da normal",
+        "A experiência é extremamente recompensadora",
       ];
       $scope.answers = [];
 

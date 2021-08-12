@@ -1,11 +1,6 @@
 angular.module('tutor').controller("PosttestCtrl", function($scope, $location, User) {
 
-    $scope.questions = ["É frequente estabelecer um objectivo mas acabar por seguir um diferente.",
-                        "Tenho dificuldade em me manter focado em projectos que demorem mais do que alguns meses para completar.",
-                        "Eu acabo tudo o que começo.",
-                        "Já alcancei um objectivo que me levou anos de esforço para o alcançar.",
-                        "Interesso-me por novos desafios regularmente.",
-                        "Sou aplicado.",
+    $scope.questions = [
 
 
     
@@ -14,7 +9,7 @@ angular.module('tutor').controller("PosttestCtrl", function($scope, $location, U
 
     $scope.processAnswers = function() {
 
-        if ($scope.answers.length < 6) {
+        if ($scope.answers.length < 0) {
             $scope.msg = "Por favor, responda todas as perguntas!"
         } else {
 

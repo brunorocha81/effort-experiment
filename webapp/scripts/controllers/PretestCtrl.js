@@ -11,6 +11,12 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
     "Os contratempos não me desencorajam.",
     "Já estive obcecado com uma ideia ou projecto por um curto periodo de tempo, tendo-me desinteressado mais tarde.",
     "Sou muito trabalhador.",
+    "É frequente estabelecer um objectivo mas acabar por seguir um diferente.",
+    "Tenho dificuldade em me manter focado em projectos que demorem mais do que alguns meses para completar.",
+    "Eu acabo tudo o que começo.",
+    "Já alcancei um objectivo que me levou anos de esforço para o alcançar.",
+    "Interesso-me por novos desafios regularmente.",
+    "Sou aplicado.",
 ];
     $scope.answers = [];
 
@@ -23,7 +29,7 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
 
         //console.log($scope.answers);
         //  validation
-        if ($scope.answers.length < 6) {
+        if ($scope.answers.length < 12) {
             $scope.msg = "Por favor, responda todas as perguntas!"
         } else {
             function add(a, b) {
