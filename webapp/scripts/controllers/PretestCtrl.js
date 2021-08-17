@@ -64,7 +64,7 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
             User.setPre(ans);
 
             console.log(User.getResponse());
-            $location.path("/home");
+            $location.path("/flow");
 
         };
 

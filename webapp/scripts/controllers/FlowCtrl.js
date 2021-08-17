@@ -56,7 +56,7 @@ angular
           User.setFlow(ans);
           User.setEndTime(time);
           console.log(User.getResponse());
-          $location.path("/questionary");
+          $location.path("/home");
         }
       };
     }

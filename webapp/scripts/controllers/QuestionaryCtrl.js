@@ -19,6 +19,7 @@ angular
 
     $scope.processAnswers = function () {
       
+
       var ans = $scope.answers;
       console.log(ans);
 
@@ -36,9 +37,12 @@ angular
 
       var sum = ans.reduce(add, 0);
 
+
       function add(a, b) {
-        return parseInt(a) + parseInt(b);
+         return parseInt(a) + parseInt(b);
       }
+      
+
 
       User.setAge($scope.age);
       User.setName($scope.name);
@@ -50,14 +54,12 @@ angular
       User.setEmail($scope.email);
       User.setWhatsapp($scope.whatsapp);
 
-      User.setUniversityEducation($scope.universityEducation);
-      User.setInstitucion($scope.institucion);
-      User.setEducationLevel($scope.educationLevel);
-      User.setConclusion($scope.conclusion);
+      User.setUniversityEducation($scope.educationalLevel);
       
       User.save();
 
       $location.path("/finish");
+
 
       /** $location.path("/finish"); */
     };
