@@ -18,7 +18,7 @@ angular
     $scope.answers = [];
 
     $scope.processAnswers = function (name, age, civilState, ethnicity, gender, economicState, city, educationalLevel) {
-      if (name && age && civilState && ethnicity && gender && economicState && city && educationalLevel){
+      if (gender){
         var ans = $scope.answers;
         console.log(ans);
 
@@ -62,7 +62,7 @@ angular
 
         /** $location.path("/finish"); */
       }else{
-        $scope.msg = "Todos os campos menos e-mail e whatsapp são obrigatórios"
+        $scope.msg = "É obrigatório o preenchimento do campo de gênero"
       }
       
     };
