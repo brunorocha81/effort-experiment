@@ -17,50 +17,53 @@ angular
     ];
     $scope.answers = [];
 
-    $scope.processAnswers = function () {
+    $scope.processAnswers = function (name, age, civilState, ethnicity, gender, economicState, city, educationalLevel) {
+      if (name && age && civilState && ethnicity && gender && economicState && city && educationalLevel){
+        var ans = $scope.answers;
+        console.log(ans);
+
+        // invert positive answers
+        // ans[0] = 5 - ans[0];
+        // ans[1] = 5 - ans[1];
+        // ans[4] = 5 - ans[4];
+        // ans[7] = 5 - ans[7];
+        // ans[9] = 5 - ans[9];
+        // ans[10] = 5 - ans[10];
+        // ans[14] = 5 - ans[14];
+        // ans[15] = 5 - ans[15];
+        // ans[18] = 5 - ans[18];
+        // ans[19] = 5 - ans[19];
+
+        var sum = ans.reduce(add, 0);
+
+
+        function add(a, b) {
+          return parseInt(a) + parseInt(b);
+        }
       
 
-      var ans = $scope.answers;
-      console.log(ans);
 
-      // invert positive answers
-      // ans[0] = 5 - ans[0];
-      // ans[1] = 5 - ans[1];
-      // ans[4] = 5 - ans[4];
-      // ans[7] = 5 - ans[7];
-      // ans[9] = 5 - ans[9];
-      // ans[10] = 5 - ans[10];
-      // ans[14] = 5 - ans[14];
-      // ans[15] = 5 - ans[15];
-      // ans[18] = 5 - ans[18];
-      // ans[19] = 5 - ans[19];
+        User.setAge($scope.age);
+        User.setName($scope.name);
+        User.setGender($scope.gender);
+        User.setEmail($scope.email);
+        User.setEthnicity($scope.ethnicity);
+        User.setCivilState($scope.civilState);
+        User.setCity($scope.city);
+        User.setEmail($scope.email);
+        User.setWhatsapp($scope.whatsapp);
 
-      var sum = ans.reduce(add, 0);
+        User.setUniversityEducation($scope.educationalLevel);
+      
+        User.save();
+
+        $location.path("/finish");
 
 
-      function add(a, b) {
-         return parseInt(a) + parseInt(b);
+        /** $location.path("/finish"); */
+      }else{
+        $scope.msg = "Todos os campos menos e-mail e whatsapp são obrigatórios"
       }
       
-
-
-      User.setAge($scope.age);
-      User.setName($scope.name);
-      User.setGender($scope.gender);
-      User.setEmail($scope.email);
-      User.setEthnicity($scope.ethnicity);
-      User.setCivilState($scope.civilState);
-      User.setCity($scope.city);
-      User.setEmail($scope.email);
-      User.setWhatsapp($scope.whatsapp);
-
-      User.setUniversityEducation($scope.educationalLevel);
-      
-      User.save();
-
-      $location.path("/finish");
-
-
-      /** $location.path("/finish"); */
     };
   });
