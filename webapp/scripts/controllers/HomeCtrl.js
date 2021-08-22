@@ -1,3 +1,5 @@
+//Changed stuff, commit pls
+
 angular.module('tutor').controller("HomeCtrl", function($scope, $location, $mdDialog, configService, User) {
     console.log("HomeCtrl ok");
 
