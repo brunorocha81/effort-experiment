@@ -6,15 +6,15 @@ angular.module('tutor').controller("PretestCtrl", function($scope, $window, $loc
 
     $scope.questions = [
     "Já ultrapassei várias contrariedades para conseguir alcançar um objetivo importante.",
-    "Novas ideias e projectos afastam-me, por vezes, de projectos anteriores. ",
+    "Novas ideias e projetos afastam-me, por vezes, de projetos anteriores. ",
     "Os meus interesses variam de ano para ano.",
     "Os contratempos não me desencorajam.",
-    "Já estive obcecado com uma ideia ou projecto por um curto periodo de tempo, tendo-me desinteressado mais tarde.",
+    "Já estive obcecado com uma ideia ou projeto por um curto periodo de tempo, tendo-me desinteressado mais tarde.",
     "Sou muito trabalhador.",
-    "É frequente estabelecer um objectivo mas acabar por seguir um diferente.",
-    "Tenho dificuldade em me manter focado em projectos que demorem mais do que alguns meses para completar.",
+    "É frequente estabelecer um objetivo mas acabar por seguir um diferente.",
+    "Tenho dificuldade em me manter focado em projetos que demorem mais do que alguns meses para completar.",
     "Eu acabo tudo o que começo.",
-    "Já alcancei um objectivo que me levou anos de esforço para o alcançar.",
+    "Já alcancei um objetivo que me levou anos de esforço para o alcançar.",
     "Interesso-me por novos desafios regularmente.",
     "Sou aplicado.",
 ];
