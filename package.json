@@ -1,7 +1,7 @@
 {
   "name": "effort_experiment",
   "version": "1.0.0",
-  "description": "This project comprises an experimental environment to study the impact stereotype threat in student anxiety",
+  "description": "This project comprises an experimental environment to study the impact stereotype threat in student motivation",
   "dependencies": {
     "express": "*",
     "uuid": "*"
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://weblab.nees.com.br/bruno/"
   },
-  "author": "Elisangela Martins",
+  "author": "Bruno Rocha",
   "license": "MIT",
   "bugs": {
     "url": ""

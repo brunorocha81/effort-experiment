@@ -7,9 +7,9 @@ angular.module('tutor').controller("FinishCtrl", function($scope, User) {
         FB.ui({
             method: 'share',
             display: 'popup',
-            href: 'https://weblab.nees.com.br/kelly/',
-            title: 'Estudo sobre Introversão',
-            description: 'Participe deste estudo sobre Introversão!',
+            href: 'https://weblab.nees.com.br/bruno/',
+            title: 'Estudo sobre Gamificação',
+            description: 'Participe deste estudo sobre Gamificação!',
             layout: 'button'
         }, function (response) { });
       
