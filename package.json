@@ -13,12 +13,11 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://weblab.nees.com.br/bruno/"
+    "url": "https://weblab.nees.com.br/bruno"
   },
   "author": "Bruno Rocha",
   "license": "MIT",
   "bugs": {
-
   },
   "homepage": ""
 }
