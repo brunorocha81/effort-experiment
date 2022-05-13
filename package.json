@@ -13,7 +13,7 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://weblab.nees.com.br/bruno/"
+    "url": "https://github.com/brunorocha81/effort-experiment"
   },
   "author": "Bruno Rocha",
   "license": "MIT",
